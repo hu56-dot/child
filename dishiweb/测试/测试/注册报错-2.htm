@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://172.20.44.82:9013/echorec/userInfor -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+
+
+        
+    </head>
+    <body>
+
+<a href="http://172.20.44.82:9013/echorec/inforec">注册信息</a><br><br>
+<a href="http://172.20.44.82:9013/echorec/dishrec">菜品推荐</a><br><br>
+<a href="http://172.20.44.82:9013/echorec/dailyrec">每日食谱</a><br><br>
+        
+
+        <p id="show_p" style="display: none;">{"ID": 16, "name": "许伊诺", "age": 9.0, "height": 160.0, "weight": 45.0, "gender": "男", "consumption": 3000.0, "puberty": 0, "prefer": ["超辣"], "asser": {"谷薯类": ["土豆"]}, "BMR": [1410.0, 3000.0], "BMI": 17.578124999999996, "userType": 0, "userIntake": 4410.0, "userThrIntake": [[1102.5, 1323.0], [1323.0, 1764.0], [1323.0, 1543.5]], "dishTypeDailyIntake": {"谷薯类": [[30.0, 42.0], [36.0, 56.0], [36.0, 49.0]], "蔬菜类": [[35.0, 48.0], [42.0, 64.0], [42.0, 56.0]], "水果类": [[20.0, 30.0], [24.0, 40.0], [24.0, 35.0]], "畜禽肉类": [[4.0, 6.0], [4.8, 8.0], [4.8, 7.0]], "鱼虾类": [[4.0, 6.0], [4.8, 8.0], [4.8, 7.0]], "蛋类": [[5.0, 6.0], [6.0, 8.0], [6.0, 7.0]], "奶类及制品": [[20.0, 24.0], [24.0, 32.0], [24.0, 28.0]], "大豆及其制品和坚果": [[8.75, 10.5], [10.5, 14.0], [10.5, 12.25]]}, "_id": {"$oid": "637b4069f7dd7cfd08ec2362"}}</p>
+        <pre id="out_pre">{<br>  "ID": 16,<br>  "name": "许伊诺",<br>  "age": 9,<br>  "height": 160,<br>  "weight": 45,<br>  "gender": "男",<br>  "consumption": 3000,<br>  "puberty": 0,<br>  "prefer": [<br>    "超辣"<br>  ],<br>  "asser": {<br>    "谷薯类": [<br>      "土豆"<br>    ]<br>  },<br>  "BMR": [<br>    1410,<br>    3000<br>  ],<br>  "BMI": 17.578124999999996,<br>  "userType": 0,<br>  "userIntake": 4410,<br>  "userThrIntake": [<br>    [<br>      1102.5,<br>      1323<br>    ],<br>    [<br>      1323,<br>      1764<br>    ],<br>    [<br>      1323,<br>      1543.5<br>    ]<br>  ],<br>  "dishTypeDailyIntake": {<br>    "谷薯类": [<br>      [<br>        30,<br>        42<br>      ],<br>      [<br>        36,<br>        56<br>      ],<br>      [<br>        36,<br>        49<br>      ]<br>    ],<br>    "蔬菜类": [<br>      [<br>        35,<br>        48<br>      ],<br>      [<br>        42,<br>        64<br>      ],<br>      [<br>        42,<br>        56<br>      ]<br>    ],<br>    "水果类": [<br>      [<br>        20,<br>        30<br>      ],<br>      [<br>        24,<br>        40<br>      ],<br>      [<br>        24,<br>        35<br>      ]<br>    ],<br>    "畜禽肉类": [<br>      [<br>        4,<br>        6<br>      ],<br>      [<br>        4.8,<br>        8<br>      ],<br>      [<br>        4.8,<br>        7<br>      ]<br>    ],<br>    "鱼虾类": [<br>      [<br>        4,<br>        6<br>      ],<br>      [<br>        4.8,<br>        8<br>      ],<br>      [<br>        4.8,<br>        7<br>      ]<br>    ],<br>    "蛋类": [<br>      [<br>        5,<br>        6<br>      ],<br>      [<br>        6,<br>        8<br>      ],<br>      [<br>        6,<br>        7<br>      ]<br>    ],<br>    "奶类及制品": [<br>      [<br>        20,<br>        24<br>      ],<br>      [<br>        24,<br>        32<br>      ],<br>      [<br>        24,<br>        28<br>      ]<br>    ],<br>    "大豆及其制品和坚果": [<br>      [<br>        8.75,<br>        10.5<br>      ],<br>      [<br>        10.5,<br>        14<br>      ],<br>      [<br>        10.5,<br>        12.25<br>      ]<br>    ]<br>  },<br>  "_id": {<br>    "$oid": "637b4069f7dd7cfd08ec2362"<br>  }<br>}</pre>
+
+
+    
+
+    <script type="text/javascript">
+ 
+        　 var text = document.getElementById('show_p').innerText; //获取json格式内容
+          
+           var result = JSON.stringify(JSON.parse(text), null, 2);//将字符串转换成json对象
+         
+           document.getElementById('out_pre').innerText= result ;
+        　　
+         
+        </script>
+  
+
+
+
+    
+
+</body></html>

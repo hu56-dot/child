@@ -1,0 +1,14 @@
+{
+    'id':1,
+    "foods":{
+        "calory":223.5,
+        "recipe":"a,s,d"
+    }
+},
+
+
+
+if foods.calory<0.1,0.3>:
+
+
+

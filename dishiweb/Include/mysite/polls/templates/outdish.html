@@ -1,0 +1,49 @@
+<!-- 
+  @Author: echo.suisui echojarn@gmail.com
+  @Date:   2022-11-20 04:26:46
+  @Last Modified by:   echo.suisui echojarn@gmail.com
+  @Last Modified time: 2022-11-21 17:22:18
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+
+        
+    </head>
+    <body>
+        ----儿童健康管理饮食推荐网站，本网站包括3个功能模块，分别是注册信息、菜品推荐和每日食谱模块。</br>
+        --注册信息模块用于帮助用户注册自己的个人账号并完善个人基本信息，点击注册信息即可进入该功能模块，用户可根据网站提示填写性别、年龄、身高、体重等个人基本的生理指标，请注意个人信息的填写格式，网站会将其作为用户饮食个性化推荐指标。</br>
+        --菜品推荐模块可以根据用户的基本信息推荐菜品，点击菜品推荐即可进入该功能模块，本网站收集了7万余条菜品数据，用户输入个人账号和所需推荐菜品数量即可获得符合其每日营养所需的个性化菜品。</br>
+        --每日食谱模块可以根据用户的基本信息推荐营养均衡、搭配合理的一日食谱，点击每日食谱即可进入该功能模块，用户输入个人账号和所需推荐食谱天数，即可获得符合其每日营养所需的个性化食谱。</br></br>
+        
+      
+
+<a href="inforec">注册信息</a></br></br>
+<a href="dishrec">菜品推荐</a></br></br>
+<a href="dailyrec">每日食谱</a></br></br>
+        
+
+        <p id="show_p" style="display: none;">{{out}}</p>
+        <pre id="out_pre"></pre>
+
+
+    </body>
+
+    <script type="text/javascript">
+ 
+        　 var text = document.getElementById('show_p').innerText; //获取json格式内容
+          
+           var result = JSON.stringify(JSON.parse(text), null, 2);//将字符串转换成json对象
+         
+           document.getElementById('out_pre').innerText= result ;
+        　　
+         
+        </script>
+  
+
+
+
+    
+</html>

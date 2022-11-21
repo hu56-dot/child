@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://172.20.44.82:9013/echorec/daily?id=4&nums=1 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+
+
+        
+    </head>
+    <body>
+
+<a href="http://172.20.44.82:9013/echorec/inforec">注册信息</a><br><br>
+<a href="http://172.20.44.82:9013/echorec/dishrec">菜品推荐</a><br><br>
+<a href="http://172.20.44.82:9013/echorec/dailyrec">每日食谱</a><br><br>
+        
+
+        <p id="show_p" style="display: none;">[[{"_id": {"$oid": "637b31d108e0ec70f3995910"}, "菜品1": "四豆杂粮米糊", "菜品2": "五谷养胃粥", "菜品3": "红极参炖蛋", "菜品1热量": 1030, "菜品2热量": 143, "菜品3热量": 27, "热量总计": 1200, "餐时": "早餐"}], [{"_id": {"$oid": "637b31d108e0ec70f3996b93"}, "菜品1": "傣味酸笋炒木耳", "菜品2": "椴木花菇腊肉焖饭", "菜品3": "银鱼蒸蛋羹", "菜品1热量": 585, "菜品2热量": 474, "菜品3热量": 71, "热量总计": 1130, "餐时": "午餐"}], []]</p>
+        <pre id="out_pre">[<br>  [<br>    {<br>      "_id": {<br>        "$oid": "637b31d108e0ec70f3995910"<br>      },<br>      "菜品1": "四豆杂粮米糊",<br>      "菜品2": "五谷养胃粥",<br>      "菜品3": "红极参炖蛋",<br>      "菜品1热量": 1030,<br>      "菜品2热量": 143,<br>      "菜品3热量": 27,<br>      "热量总计": 1200,<br>      "餐时": "早餐"<br>    }<br>  ],<br>  [<br>    {<br>      "_id": {<br>        "$oid": "637b31d108e0ec70f3996b93"<br>      },<br>      "菜品1": "傣味酸笋炒木耳",<br>      "菜品2": "椴木花菇腊肉焖饭",<br>      "菜品3": "银鱼蒸蛋羹",<br>      "菜品1热量": 585,<br>      "菜品2热量": 474,<br>      "菜品3热量": 71,<br>      "热量总计": 1130,<br>      "餐时": "午餐"<br>    }<br>  ],<br>  []<br>]</pre>
+
+
+    
+
+    <script type="text/javascript">
+ 
+        　 var text = document.getElementById('show_p').innerText; //获取json格式内容
+          
+           var result = JSON.stringify(JSON.parse(text), null, 2);//将字符串转换成json对象
+         
+           document.getElementById('out_pre').innerText= result ;
+        　　
+         
+        </script>
+  
+
+
+
+    
+
+</body></html>

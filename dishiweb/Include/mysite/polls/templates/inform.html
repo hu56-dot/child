@@ -1,0 +1,91 @@
+<!-- 
+  @Author: echo.suisui echojarn@gmail.com
+  @Date:   2022-11-19 20:12:06
+  @Last Modified by:   echo.suisui echojarn@gmail.com
+  @Last Modified time: 2022-11-21 17:22:13
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POST Params</title>
+</head>
+{%load static %}
+
+<body>
+  ----儿童健康管理饮食推荐网站，本网站包括3个功能模块，分别是注册信息、菜品推荐和每日食谱模块。</br>
+  --注册信息模块用于帮助用户注册自己的个人账号并完善个人基本信息，点击注册信息即可进入该功能模块，用户可根据网站提示填写性别、年龄、身高、体重等个人基本的生理指标，请注意个人信息的填写格式，网站会将其作为用户饮食个性化推荐指标。</br>
+  --菜品推荐模块可以根据用户的基本信息推荐菜品，点击菜品推荐即可进入该功能模块，本网站收集了7万余条菜品数据，用户输入个人账号和所需推荐菜品数量即可获得符合其每日营养所需的个性化菜品。</br>
+  --每日食谱模块可以根据用户的基本信息推荐营养均衡、搭配合理的一日食谱，点击每日食谱即可进入该功能模块，用户输入个人账号和所需推荐食谱天数，即可获得符合其每日营养所需的个性化食谱。</br></br>
+  
+
+  <a href="inforec">注册信息</a></br></br>
+  <a href="dishrec">菜品推荐</a></br></br>
+  <a href="dailyrec">每日食谱</a></br></br>
+
+<form method="post" action="userInfor" >
+  id:</br></br>
+  <input type="text" name="id" placeholder="你的注册账号6位数 eg：180000" style="width:300px"/></br>
+</br></br>
+
+name:</br></br>
+<input type="text" name="name" placeholder="你的名字 eg:石亚军" style="width:300px"/></br>
+</br></br>
+
+height:</br></br>
+<input type="text" name="height" placeholder="身高 eg:140.0" style="width:300px"/></br>
+</br></br>
+
+weight:</br></br>
+<input type="text" name="weight" placeholder="体重 eg：40.0" style="width:300px"/></br>
+</br></br>
+
+age:</br></br>
+<input type="text" name="age" placeholder="年龄 eg：8.5" style="width:300px"/></br>
+</br></br>
+
+gender:</br></br>
+<input type="text" name="gender" placeholder="性别 eg：女" style="width:300px"/></br>
+</br></br>
+
+
+
+
+consumption:</br></br>
+<input type="text" name="consumption" placeholder="(选填)运动消耗量 kcal eg：3000" style="width:400px"/></br>
+</br></br>
+</br></br>
+
+
+
+<font color="#2F0090">----------------------------puberty-----------------------------------</font></br></br>
+</br></br>
+<input type="text" name="puberty" placeholder="是否进入青春期 eg: 0\1" style="width:300px"/></br>
+</br><img src="{% static 'images/laingbiao.png' %}">
+</br></br>
+</br></br>
+</br></br>
+<font color="#2F0090">----------------------prefer--------------------------------------------</font></br></br>
+</br></br>
+<input type="text" name="prefer" placeholder="(选填)你的饮食偏好，注意格式哦 eg：原味,酱香" style="width:400px"/></br>
+</br><img src="{% static 'images/ko.png' %}">
+</br></br></br></br>
+</br></br>
+<font color="#2F0090">----------------------------asser-------------------------</font></br></br>
+</br></br><input type="text" name="asser" placeholder="(选填)忌口食物，注意格式哦 eg: 谷薯类:木薯\紫薯,禽畜肉:鸡翅\鸡腿" style="width:400px"  style ="background-color:#2F0090"/></br>
+</br><img src="{% static 'images/type.png' %}">
+</br></br>
+
+
+
+
+
+
+
+
+
+
+    <input type="submit" value="Submit">    
+</form>
+</body>
+</html>
